@@ -1,7 +1,9 @@
 
 
 //раелизация слайдера 
-document.addEventListener("DOMContentLoaded", ready);
+
+
+document.addEventListener('DOMContentLoaded', ready);
 function ready(){
 	window.setInterval(func, 2000);
 }
@@ -13,4 +15,33 @@ function func(){
 	img.src = 'img/card_'+window.number+'.jpg';
 	}
 
-	
+// реализация перехода страница по ссылкам в шапке меню
+
+
+var elem = document.querySelectorAll('.navigator');
+
+
+
+
+elem[0].onclick = func1;
+elem[1].onclick = func2;
+elem[2].onclick = func3;
+elem[3].onclick = func4;
+
+
+function func1(){	
+ window.scrollTo(0, 500);
+}
+
+function func2(){	
+ window.scrollTo(0, 1350);
+}
+function func3(){	
+ window.scrollTo(0, 3000);
+}
+function func4(){	
+ window.scrollTo(0, 3500);
+}
+
+
+

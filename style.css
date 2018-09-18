@@ -19,7 +19,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	width: 80%;	
+	width: 85%;	
 }
 ul{
 	display: flex;
@@ -37,6 +37,7 @@ a{
 	font-size: 0.9em;
 	font-style: normal;
 	font-family: Arial, sans-serif;
+	cursor: pointer;
 
 }
 a:hover{
