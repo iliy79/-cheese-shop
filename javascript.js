@@ -20,14 +20,10 @@ function func(){
 
 var elem = document.querySelectorAll('.navigator');
 
-
-
-
 elem[0].onclick = func1;
 elem[1].onclick = func2;
 elem[2].onclick = func3;
 elem[3].onclick = func4;
-
 
 function func1(){	
  window.scrollTo(0, 500);
@@ -43,5 +39,20 @@ function func4(){
  window.scrollTo(0, 3500);
 }
 
+// подсветка названия сыров
 
+var p=document.querySelectorAll('.name_cheese');
+window.setInterval(start, 1500);
+
+function start(){
+	for (var i = 0; i < p.length; i++) {
+		p[i]
+	
+	if(p[i].style.color =='limegreen') {
+		p[i].style.color = 'green';
+ 	} else {
+		p[i].style.color ='limegreen';
+	}
+}
+}
 
